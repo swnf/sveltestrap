@@ -19,5 +19,5 @@
 </script>
 
 {#if isOpen && loaded}
-  <div role="presentation" {...$$restProps} class={classes} class:fade in:backdropIn out:backdropOut on:click />
+  <div role="presentation" {...$$restProps} class={classes} class:fade in:backdropIn|global out:backdropOut|global on:click />
 {/if}
