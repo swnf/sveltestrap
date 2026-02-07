@@ -8,7 +8,7 @@ export function backdropIn(node) {
   return {
     duration,
     tick: (t) => {
-      if (t === 0) {
+      if (t > 0) {
         node.classList.add('show');
       }
     }
