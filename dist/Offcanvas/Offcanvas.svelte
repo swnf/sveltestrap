@@ -201,7 +201,7 @@
     style={`visibility: ${isOpen || isTransitioning ? 'visible' : 'hidden'};${style}`}
     tabindex="-1"
   >
-    {#if toggle || header || $$slots.header}
+    {#if header || $$slots.header}
       <OffcanvasHeader {toggle}>
         {#if header}
           {header}
